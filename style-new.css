@@ -1,0 +1,162 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+#content {
+    display: grid;
+    max-width: 1140px;
+    grid-gap: 40px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+
+#logo {
+    background: rgb(239, 239, 239);
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#menu {
+    text-align: right;
+}
+
+#menu button {
+    padding: 10px;
+    margin: 5px;
+    background: transparent;
+    border: none;
+}
+
+#menu button:hover {
+    background: rgb(239, 239, 239);
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    column-gap: 20px;
+    align-items: center;
+}
+
+#hero-title p{
+    margin: 20px 0;
+}
+
+#hero-title button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#hero-image img {
+    width: 100%;
+}
+
+.tema {
+    border-radius: 10px;
+    background-image: url(images/background-theme.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: white;
+  padding: 20px;
+  -moz-box-shadow:    inset 0 -7px 9px -7px black;
+  -webkit-box-shadow: inset 0 -7px 9px -7px black;
+  box-shadow:         inset 0 -70px 90px -7px black;
+  display: grid;
+  align-content: space-between;
+}
+
+#temas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    column-gap: 20px;
+}
+
+#convidados {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    column-gap: 20px;
+  justify-content: space-between;
+}
+
+.convidado {
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.convidado h5 {
+    font-weight: normal;
+}
+
+.profile {
+    width: 100%;
+    min-width: 150px;
+    min-height: 150px;
+    position: relative;
+    border-radius: 10px;
+    object-fit:cover;
+}
+
+#evento {
+    display: grid;
+    row-gap: 40px;
+}
+
+#cadastro {
+    display: grid;
+    column-gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    text-align: right;
+    align-items: center;
+    padding: 80px 80px;
+}
+
+#cadastro h2{
+    font-size: 3em;
+}
+
+#cadastro input {
+    border-radius: 10px 0 0 10px;
+    border: 1px solid black;
+    height: 50px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px;
+}
+
+#cadastro form {
+    display: grid;
+    grid-template-columns: 1fr auto;;
+}
+
+#cadastro button {
+    padding: 0 10px;
+    color: white;
+    border: 1px solid black;
+    border: none;
+    background: black;
+    height: 50px;
+    border-radius: 0 10px 10px 0;
+    margin-left: -5px;
+}
+
+footer {
+    padding: 30px;
+    background: rgb(239, 239, 239);
+    margin-top: 40px;
+    font-family: 'Poppins';
+    text-align: center;
+}
