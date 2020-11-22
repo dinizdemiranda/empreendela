@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel - Renova</title>
+    <link rel="stylesheet" href="style-panel.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,800;1,300&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+        <div id="menu">
+            <button id="btn-tab1" class="btn-tab active" value="tab1" onclick="changeTab(value); changeActive(id);">Grupo 5</button>
+            <button id="btn-tab2" class="btn-tab" value="tab2" onclick="changeTab(value); changeActive(id);">Ranking</button>
+        </div>
+
+        <div id="tab2" class="tab hidden">
+            <div id="ordenacao"> <span>Ordenar por</span>
+                <input type="radio" name="ordenar" id="grupos" onclick="printBars()" checked>
+                <label for="grupos">Grupo</label>
+    
+                <input type="radio" name="ordenar" id="ranking" onclick="printBars('rank')">
+                <label for="ranking">Ranking (leads válidos)</label></div>
+           
+        <div id="main">
+            </div>
+        </div>
+   
+        <div id="tab1" class="tab">     
+            <div id="resumo"> <h2>Leads totais:</h2><h2 id="count" class="counter"></h2>
+                <h2> / Leads válidos:</h2><h2 id="countValid" class="counter"></h2>
+            <h3 id="percentage"></h3></div>
+   
+    <div id="board">
+
+        <div><h4>#</h4></div>
+        <div><h4>ID</h4></div>
+        <div><h4>Nome</h4></div>
+        <div><h4>E-mail</h4></div>
+        <div><h4>IP</h4></div>
+    </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+
+</html>
