@@ -9,36 +9,50 @@
   <title>Empreendela</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
 
 </head>
 
 <body>
+  <div id="open-menu" class="hidden">
+    <img src="images/close.svg" id="close" alt="" srcset="" onclick="toggleMenu()">
+    <img src="images/empreendela-logo-white.svg" id="logo" alt="" srcset="">
+    
+    <div><a href="/">Home</a></div>
+     <div><a href="#palestras" onclick="toggleMenu()">Programação</a></div>
+     <div><a href="#inspire" onclick="toggleMenu()">Convidados</a></div>
+     <div><a href="#inscreva" onclick="toggleMenu()">Inscreva-se</a></div>
+  </div>
+  <div id="header">
+    <a href="/"><img src="images/empreendela-logo.svg" alt="" srcset="" id="logo"></a>
+    <div id="menu">
+     <a href="#palestras"> <button>Programação</button></a>
+     <a href="#inspire"><button>Convidados</button></a>
+     <a href="#inscreva"><button>Inscreva-se</button></a>
+    </div>
+    <div id="menu-mobile">
+    
+      <img src="images/menu.svg" alt="" srcset="" id="hamburger" onclick="toggleMenu()">
+    </div>
+  </div>
 
-  <div id="content">
-    <div id="header">
-      <div id="logo">
-        <p style="font-size: 2em;font-weight: bold;color: grey;text-align: center;">LOGO</p>
-      </div>  
-      <div id="menu">
-        <button>conteúdo</button>
-        <button>convidados</button>
-        <button>inscreva-se</button>
-      </div>
+    <div id="hero">
+        <div id="hero-image">
+        </div>
+        <div id="title-pai">
+          <div id="hero-title">
+          <h1> Lorem, ipsum dolor sit amet consectetur adipisicing elit nulla quasi ab quisquam. </h1>
+          <p> Voluptate doloremque animi impedit soluta facilis rerum modi ratione culpa placeat, cum qui corrupti veniam est quaerat dignissimos excepturi. </p>
+          <a href="#inscreva" > <button>Inscreva-se</button></a>
+          <h1>#empreenDela</h1>
+        </div>
+        </div>
     </div>
 
-      <div id="hero">
-          <div id="hero-image">
-            <img src="images/backgroun-profile.jpeg" alt="" srcset="">
-          </div>
-          <div id="hero-title">
-            <h1> Lorem, ipsum dolor sit amet consectetur adipisicing elit nulla quasi ab quisquam. </h1>
-            <p> Voluptate doloremque animi impedit soluta facilis rerum modi ratione culpa placeat, cum qui corrupti veniam est quaerat dignissimos excepturi. </p>
-            <button>Call to action</button>
-          </div>
-      </div>
-      <div id="evento">
-         <h2>Conteúdo exclusivo</h2>
+    <div id="palestras">
+      <div class="evento" id="tema">
+         <h2>Confira a programação do evento</h2>
           <DIv id="temas">
             <div class="tema">
               <p>Tema 1</p>
@@ -53,9 +67,23 @@
               <h3> Recusandae quibusdam modi voluptas dolorum. </h3>
             </div>
           </DIv>
-          <h3>
-            Convidados
-          </h3>
+        </div>
+        <div id="hora">
+          <div id="acompanhe">
+          <h2>Acompanhe o evento pelo</h2> <h1> <strong><u>Coletivo POWER</u></strong></h1>
+        </div>
+        <div id="data">
+          <h3>25 de novembro de 2020 | 19h30</h3>
+          <h3>(Horário de Brasília)</h3></div>
+        </div>
+
+      </div>
+        <div class="evento" id="inspire">
+          <div id="inspire2">
+          <h2>
+            Inspire-se
+          </h2>
+          <p>Conheça as mulheres que estão transformando seus mercados de trabalho e redefinindo o empreendedorismo feminino.</p>
           <div id="convidados" >
             
             <div class="convidado">
@@ -93,26 +121,50 @@
               <h4>Michele Obama</h4>
               <h5>CEO - WhiteHouse</h5>
             </div>
-          </div>
-      </div>
+          </div></div>
+        </div>
+        <div id="inscreva">
       <div id="cadastro">
         <div>
           <h3>O evento começará em</h3>
            <h2 id="contador"></h2>    
         </div>
-        <form action="">
-          <input type="email" placeholder="E-mail">
-          <button>inscreva-se</button>
-        </form> 
+       <!-- Begin Mailchimp Signup Form -->
+<div id="mc_embed_signup">
+  <form action="https://hotmail.us4.list-manage.com/subscribe/post?u=d0ca29c27b2764e288669b25e&amp;id=9f60e3c2df" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <div id="mc_embed_signup_scroll">
+    
+          <div class="mc-field-group">
+            <input type="email" value="" placeholder="E-mail" name="EMAIL" class="required email" id="mce-EMAIL">
+          </div>
+          <div class="clear"><input type="submit" value="Inscreva-se" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+      </div>  
+          <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+          </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+       <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d0ca29c27b2764e288669b25e_9f60e3c2df" tabindex="-1" value=""></div>
+      
+  </form>
+  </div>
+  
+  <!--End mc_embed_signup-->
               
       </div>
+    
+      <div id="conheca">
+      <h2>Conheça o #empreenDela e participe!</h2>
+      <a href="https://www.instagram.com/coletivopower/"><img src="images/instagram.svg" alt="" srcset=""></a>
+      <a href="https://web.facebook.com/ColetivoPOWER/"><img src="images/facebook.svg" alt="" srcset=""></a>
+      <a href="https://www.youtube.com/channel/UCB5Jc2aFY3qAVgdFQ92tS_A"><img src="images/youtube.svg" alt="" srcset=""></a>
+    </div>
+    </div>
       <div id="conteudo">
 
       </div>
-  </div>
 
 <footer>
-<p>Todos os direitos reservados</p>
+<p>Copyright © 2020. Todos os direitos reservados.</p>
 </footer>
 
 <script>
@@ -144,6 +196,12 @@
   }, 1000);
   </script>
 <!-- <script src="popup.js"></script> -->
+
+<script>
+  function toggleMenu(){
+    document.getElementById('open-menu').classList.toggle('hidden');
+  }
+</script>
 </body>
 
 </html>
