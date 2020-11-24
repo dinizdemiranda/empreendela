@@ -141,18 +141,51 @@
 
 .tema {
     border-radius: 10px;
-    background-image: url(images/background-theme.jpg);
     height: 400px;
     background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   color: white;
   padding: 20px;
-  -moz-box-shadow:    inset 0 -7px 9px -7px black;
-  -webkit-box-shadow: inset 0 -7px 9px -7px black;
-  box-shadow:         inset 0 -70px 90px -7px black;
+  -moz-box-shadow:    inset 0 -7px 9px -7px #260947;
+  -webkit-box-shadow: inset 0 -7px 9px -7px #260947;
+  box-shadow:         inset 0 -70px 90px -7px #260947;
   display: grid;
   align-content: space-between;
+justify-content: start;
+width: 100%;
+box-sizing: border-box;
+}
+
+.hash-theme {
+    position: relative;
+}
+
+.tema h3 {
+    width: 90%;
+}
+
+.tema button {
+    background: #3A0C74;
+    padding: 5px 20px;
+    border: none;
+    color: white;
+    position: absolute;
+    left: -30px;
+}
+
+#tema1 {
+    background-image: url(images/background-theme.jpg);
+}
+
+#tema2 {
+
+    background-image: url(images/empreendedora-negra.jpg);
+}
+
+#tema3 {
+
+    background-image: url(images/mulher-trabalhando.jpg);
 }
 
 #temas {
@@ -180,6 +213,7 @@
 #convidados {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-rows: 1fr;
     column-gap: 20px;
   justify-content: space-between;
   margin-top: 30px;
@@ -198,7 +232,7 @@
 .profile {
     width: 100%;
     min-width: 150px;
-    min-height: 150px;
+    height: 150px;
     position: relative;
     border-radius: 10px;
     object-fit:cover;
