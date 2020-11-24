@@ -131,7 +131,7 @@
 
 #hero-image {
 
-    background-image: url(images/background-women.png);
+    background-image: url(images/background-women.jpg);
     background-position: right;
 }
 
@@ -406,6 +406,10 @@ footer p {
 .hidden {
     display: none;
     opacity: 0;
+}
+
+.scroll {
+    overflow: hidden;
 }
 
   @media only screen and (min-width: 768px) {
