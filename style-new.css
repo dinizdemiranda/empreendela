@@ -95,6 +95,30 @@
     background-position: center;
 }
 
+#etiqueta-dia {
+    text-align: right;
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+}
+
+#etiqueta-dia span {
+    padding: 10px 20px;
+    background: #3A0C74;
+    color: white;
+    font-weight: 900;
+    font-family: 'Roboto';
+}
+
+#etiqueta-dia-mobile {
+    background: #3A0C74;
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+    font-weight: 900;
+    font-family: 'Roboto';
+}
+
 #hero-title {
     max-width: 570px;
     padding: 40px 20px 40px 40px;
@@ -112,6 +136,8 @@
 
 #hero-title p{
     margin: 20px 0;
+    line-height: 1.8;
+    color: #260947;
 }
 
 #hero-title button {
@@ -133,11 +159,11 @@
 
     background-image: url(images/background-women.jpg);
     background-position: right;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#hero-image img {
-    width: 100%;
-}
 
 .tema {
     border-radius: 10px;
@@ -175,7 +201,7 @@ box-sizing: border-box;
 }
 
 #tema1 {
-    background-image: url(images/background-theme.jpg);
+    background-image: url(images/empreendedora.jpg);
 }
 
 #tema2 {
@@ -264,6 +290,11 @@ box-sizing: border-box;
 #acompanhe h2, #acompanhe h1 {
     color: #BF6575;
     font-family: 'Roboto';
+}
+
+#acompanhe a {
+    text-decoration: none;
+    color: #BF6575;;
 }
 
 .evento {
@@ -394,6 +425,7 @@ footer p {
         display: none;
     }
 
+
     #hora {
         font-size: 1em;
     }
@@ -448,10 +480,7 @@ footer p {
 }
 
   @media only screen and (min-width: 768px) {
-    #menu-mobile {
-        display: none;
-    }
-    #open-menu {
+    #menu-mobile,  #etiqueta-dia-mobile, #open-menu {
         display: none;
     }
   }
