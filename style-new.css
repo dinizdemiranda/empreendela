@@ -410,7 +410,7 @@ footer p {
 
 .scroll {
     overflow: hidden;
-    position: relative;
+    position: fixed;
 }
 
   @media only screen and (min-width: 768px) {
