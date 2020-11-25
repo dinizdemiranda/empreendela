@@ -95,10 +95,6 @@
     padding: 20px;
 }*/
 
-#hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
 
 #title-pai {
     background: #D9BFD4;
@@ -112,6 +108,7 @@
     padding: 40px 20px 40px 40px;
     box-sizing: border-box;
     text-align: center;
+    margin: 0 auto;
 }
 
 #hero-title h1 {
@@ -130,8 +127,12 @@
 }
 
 #conheca {
-    padding: 0 20px;
+    padding: 40px 20px;
     text-align: center;
+}
+
+#conheca h3 {
+    margin: 30px 0;
 }
 
 #conheca h2{
