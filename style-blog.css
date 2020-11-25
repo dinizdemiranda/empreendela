@@ -1,0 +1,140 @@
+body {
+    background-image: url(images/bolinhas2.svg);
+}
+
+
+
+#blog {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin: 0 auto;
+    max-width: 860px;
+    padding: 0 20px;
+} 
+
+
+@media only screen and (max-width: 767px) {
+    #blog {
+        display: block;
+    }
+    #post-title h1 {
+        font-size: 2em !important;
+    }
+    #post {
+        padding: 0 !important;
+    }
+    #data-post {
+        display: none;
+    }
+
+    #post ul {
+        padding: 20px !important;
+        font-size: 1em !important;
+    }
+}
+
+
+h1, h2, h3, h4 {
+    color: #3A0C74;
+}
+
+
+#data-post {
+    padding-right: 20px;
+    margin-top: 20px;
+    text-align: center;
+    border-right: 1px solid gray;
+}
+
+#post {
+    padding-right: 60px;
+    padding: 0 20px;
+}
+
+#post p {
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+#post-title h1 {
+    margin-bottom: 40px;
+    font-size: 3em;
+}
+
+#post-title {
+    margin-top: 40px;
+    grid-column: 1/3;
+}
+
+#post-image {
+    grid-column: 1/3;
+
+    padding-bottom: 20px;
+}
+
+#post-image img {
+    width: 95%;
+    max-height: 500px;
+    border-radius: 20px;
+}
+
+#post h2 {
+    font-size: 2em;
+}
+
+#ilustra {
+    margin: 50px 0;
+}
+
+.dots {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#post h3 {
+    font-size: 1.6em;
+    margin-top: 40px;
+}
+
+#post h4 {
+    font-size: 1.3em;
+    color: #3A0C74;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#post h5 {
+    color: gray;
+}
+
+#post h3, #post h1, #post h2 {
+    color: #3A0C74;
+}
+
+.quote {
+    background: #3A0C74;
+    background-image: url(images/bolinhas.png);
+    background-size: cover;
+    color: white;
+    font-size: 2em;
+}
+
+#post li {
+    margin-left: 20px;
+    padding: 15px 0;
+    font-size: 1.2em;
+}
+
+#post ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 40px 0;
+    background: #3A0C74;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+#post img {
+    max-width: 100%;
+}
