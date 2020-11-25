@@ -1,0 +1,255 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    align-items: center;
+}
+
+#hamburger {
+    max-width: 40px;
+}
+
+#logo {
+    max-width: 220px;
+    margin-top: 5px;
+}
+
+#menu, #menu-mobile {
+    text-align: right;
+}
+
+#menu button {
+    padding: 10px;
+    margin: 5px;
+    background: transparent;
+    border: none;
+    color: #3A0C74;
+    font-size: 1.1em;
+}
+
+#menu button:hover {
+    background: #3b0c7411;
+    border-radius: 10px;
+}
+
+/*open-menu {
+    background: #3A0C74;
+    height: 100vh;
+    width: 85%;
+    min-width: 300px;
+    max-width: 500px;
+    position: fixed;
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow: 200px 0 0px rgba(0, 0, 0, 0.418);
+    opacity: 1;
+    transition: opacity 2s ease-out;
+}
+
+#open-menu {
+    background: #3A0C74;
+    height: 100vh;
+    width: 85%;
+    min-width: 300px;
+    max-width: 500px;
+    position: fixed;
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow: 200px 0 0px rgba(0, 0, 0, 0.418);
+    opacity: 1;
+    transition: opacity 2s ease-out;
+}
+
+
+#open-menu img {
+    margin-bottom: 70px;
+}
+
+#open-menu div {
+    padding-bottom: 25px;
+    padding-top: 25px;
+    border-bottom: 1px solid #e4b2bb;
+}
+
+#open-menu a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-size: 1.5em;
+}
+
+#close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    padding: 20px;
+}*/
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#title-pai {
+    background: #D9BFD4;
+    background-image: url(images/bolinhas.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#hero-title {
+    max-width: 570px;
+    padding: 40px 20px 40px 40px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#hero-title h1 {
+    font-size: 2.5em;
+    margin: 40px 0 0 0;
+    font-family: 'Roboto', sans-serif;
+    color: #3A0C74;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+#hero-title p{
+    margin: 20px 0;
+    line-height: 1.8;
+    color: #260947;
+}
+
+#conheca {
+    padding: 0 20px;
+    text-align: center;
+}
+
+#conheca h2{
+    color: #BF6575;
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+#conheca img {
+    margin: 10px;
+    max-width: 50px;
+}
+
+
+#cadastro {
+    display: grid;
+    column-gap: 40px;
+    grid-template-columns: auto 1fr;
+    margin: 0 auto;
+    text-align: right;
+    align-items: center;
+    padding: 80px 80px 40px 80px;
+    row-gap: 20px;
+    color: #3A0C74;
+}
+
+#cadastro h2{
+    font-size: 3em;
+}
+
+#mc-embedded-subscribe {
+    padding: 0 10px;
+    color: white;
+    border: 1px solid #3A0C74;
+    border: none;
+    background: #3A0C74;
+    height: 50px;
+    border-radius: 0 10px 10px 0;
+    margin-left: -5px;
+}
+
+#mc-embedded-subscribe:hover {
+    background: #260947;
+}
+
+footer {
+    padding: 30px;
+    background: #160D35;
+    text-align: center;
+    
+    margin-top: 40px
+}
+
+footer p {
+    color: white;;
+}
+
+@media only screen and (max-width: 767px) {
+    #menu, #hero-image {
+        display: none;
+    }
+
+
+    #hora {
+        font-size: 1em;
+    }
+    #hero, #cadastro {
+        grid-template-columns: 1fr;
+    }
+
+    #hero-title {
+        padding: 40px 20px;
+    }
+
+    #cadastro {
+        text-align: center;
+        padding: 40px;
+    }
+
+    #cadastro h2 {
+        font-size: 2em;
+    }
+    #conheca h2 {
+        font-size: 1em;
+    }
+
+    #header {
+        padding: 20px 20px 10px 20px;
+    }
+
+    .tema {
+        height: 300px;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    #hero-title h1 {
+        font-size: 2em;
+        margin: 10px 0;
+    }
+    #logo {
+        max-width: 180px;
+    }
+}
+
+
+.hidden {
+    display: none;
+    opacity: 0;
+}
+
+.scroll {
+    overflow: hidden;
+    position: fixed;
+}
+
+  @media only screen and (min-width: 768px) {
+    #menu-mobile,  #etiqueta-dia-mobile, #open-menu {
+        display: none;
+    }
+  }
