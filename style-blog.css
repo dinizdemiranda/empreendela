@@ -61,6 +61,11 @@ h1, h2, h3, h4 {
     font-size: 3em;
 }
 
+#post-title h2 {
+    margin-bottom: 40px;
+    margin-top: -20px;
+}
+
 #post-title {
     margin-top: 40px;
     grid-column: 1/3;
