@@ -558,6 +558,21 @@ footer p {
 
 /* codigo do popup */
 
+.pop-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1,25rem;
+    font-weight: bold;
+    color: #BF6575;
+}
+
+.pop-body{
+    padding: 10px 15px;
+    color:  #3A0C74;
+}
+
 .exit-intent-popup {
     position: fixed;
     top: 0;
