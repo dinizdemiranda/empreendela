@@ -483,6 +483,14 @@ footer p {
     position: fixed;
 }
 
+#etiqueta-dia span {
+    font-size: 2em;
+}
+
+#etiqueta-dia svg {
+    margin-bottom: 3px;
+}
+
   @media only screen and (min-width: 768px) {
     #menu-mobile,  #etiqueta-dia-mobile, #open-menu {
         display: none;
