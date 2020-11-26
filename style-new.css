@@ -407,6 +407,10 @@ box-sizing: border-box;
     background: #260947;
 }
 
+div.titulo-blog {
+    text-align: center;
+}
+
 footer {
     padding: 30px;
     background: #160D35;
