@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style-new.css">
+  <link rel="stylesheet" href="style-live.css">
+  <title>Empreendela - Ao vivo</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NNLM7M1T5V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NNLM7M1T5V');
+</script>
+
+
+</head>
+
+<body>
+  <div id="open-menu" class="hidden">
+    <img src="images/close.svg" id="close" alt="" srcset="" onclick="toggleMenu()">
+    <img src="images/empreendela-logo-white.svg" id="logo" alt="" srcset="">
+    
+    <div><a href="/">Home</a></div>
+     <div><a href="#palestras" onclick="toggleMenu()">Temas</a></div>
+     <div><a href="#inspire" onclick="toggleMenu()">Convidadas</a></div>
+     <!-- <div><a href="#inscreva" onclick="toggleMenu()">Inscreva-se</a></div> -->
+     <div><a href="#magazine" onclick="toggleMenu()">Blog</a></div>
+  </div>
+  <div id="header">
+    <a href="/"><img src="images/empreendela-logo.svg" alt="" srcset="" id="logo"></a>
+    <div id="live-title">
+      <span>Estamos ao vivo!
+
+        <svg height="14" width="14" class="blinking">
+          <circle cx="7" cy="7" r="7" fill="red" />
+          Sorry, your browser does not support inline SVG.  
+        </svg> 
+      </span>
+    </div>
+    <div id="menu-mobile">
+    
+      <img src="images/menu.svg" alt="" srcset="" id="hamburger" onclick="toggleMenu()">
+    </div>
+  </div>
+  <div id="live" class="video-container">
+    
+    <iframe width="100%" src="https://www.youtube.com/embed/9ptn3QBQ_LI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+      <div id="redes">
+        <div id="conheca">
+         <a href="https://www.youtube.com/watch?v=9ptn3QBQ_LI"> <button id="youtube">Ver no Youtube</button></a>
+         <a href="/home.html"> <button id="go-to">Ir para o site <svg viewBox="0 -22 512 511" xmlns="http://www.w3.org/2000/svg"><path d="m512 233.820312-212.777344-233.320312v139.203125h-45.238281c-140.273437 0-253.984375 113.710937-253.984375 253.984375v73.769531l20.09375-22.019531c68.316406-74.851562 164.980469-117.5 266.324219-117.5h12.804687v139.203125zm0 0"/></svg></button></a>
+        <h2>Conheça o #empreenDela e participe!</h2>
+        <a href="https://www.instagram.com/coletivopower/"><img src="images/instagram.svg" alt="" srcset=""></a>
+        <a href="https://web.facebook.com/ColetivoPOWER/"><img src="images/facebook.svg" alt="" srcset=""></a>
+        <a href="https://www.youtube.com/channel/UCB5Jc2aFY3qAVgdFQ92tS_A"><img src="images/youtube.svg" alt="" srcset=""></a>
+        <a href="https://www.linkedin.com/company/coletivo-power/about/"><img src="images/linkedin.svg" alt="" srcset=""></a>
+  
+      </div>
+      </div>
+
+
+<footer>
+<p>Copyright © 2020. Todos os direitos reservados.</p>
+</footer>
+
+<script>
+
+
+  function hideCounter() {
+    document.getElementById('counter').classList.add('hidden')
+  }
+
+  function closePopup() {
+    document.getElementById('pop-container').classList.add('hidden')
+  }
+
+  var countDownDate = new Date("Nov 26, 2020 19:00:00").getTime();
+  
+  var x = setInterval(function() {
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+  
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+   
+    document.getElementById("contador").innerHTML = hours + "h "
+    + minutes + "m " + seconds + "s ";
+  
+    
+  }, 1000);
+  </script>
+<script src="popup.js"></script>
+
+<script>
+  function toggleMenu(){
+    document.getElementById('open-menu').classList.toggle('hidden');
+    document.getElementsByTagName('body')[0].classList.toggle('scroll')
+  }
+</script>
+</body>
+
+</html>
