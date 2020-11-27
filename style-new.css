@@ -4,6 +4,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+button {
+
+    cursor: pointer;
+}
 
 #header {
     display: grid;
@@ -297,6 +301,10 @@ box-sizing: border-box;
     color: #BF6575;;
 }
 
+#acompanhe {
+    margin-bottom: 30px;
+}
+
 .evento {
     text-align: center;
     padding: 40px 0;
@@ -481,10 +489,6 @@ footer p {
 .scroll {
     overflow: hidden;
     position: fixed;
-}
-
-#etiqueta-dia span {
-    font-size: 2em;
 }
 
 #etiqueta-dia svg {
