@@ -47,14 +47,11 @@
 
 #go-to {
     border-radius: 5px;
-    background: #BF6575;
+    background: #3A0C74;
     color: white;
     border: none;
     padding: 10px 20px;
-    font-size: 1.4em;
     font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 40px;
     cursor: pointer;
 }
 
@@ -82,10 +79,28 @@
     fill: white;
     width: 15px;
     margin-left: 5px;
+    margin-bottom: 0;
 }
 
+#go-to:hover {
+    opacity: 0.8;
+}
 
+#rolou {
+    max-width: 1140px;
+    margin: 0 auto;
+    color: #3A0C74;
+    margin-bottom: 20px;
+    text-align: center;
+}
 
   #menu-mobile,  #etiqueta-dia-mobile, #open-menu {
     display: none !important;
 }
+
+@media only screen and (max-width: 768px) {
+   h1 {
+
+    font-size: 1.5em;
+    }
+  }
